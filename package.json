@@ -1,0 +1,32 @@
+{
+  "name": "leetcode",
+  "version": "1.0.0",
+  "description": "My practices of algorithm problems on LeetCode",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --ci"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tony40508/leetcode-js.git"
+  },
+  "keywords": [
+    "javascript"
+  ],
+  "author": "tony40508",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tony40508/leetcode-js/issues"
+  },
+  "homepage": "https://github.com/tony40508/leetcode-js#readme",
+  "devDependencies": {
+    "eslint": "^6.3.0",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-node": "^10.0.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "jest": "^24.9.0",
+    "standard": "^14.1.0"
+  }
+}
