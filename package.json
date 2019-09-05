@@ -20,6 +20,10 @@
   },
   "homepage": "https://github.com/tony40508/leetcode-js#readme",
   "devDependencies": {
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "babel-jest": "^24.9.0",
     "eslint": "^6.3.0",
     "eslint-config-standard": "^14.1.0",
     "eslint-plugin-import": "^2.18.2",
@@ -28,5 +32,8 @@
     "eslint-plugin-standard": "^4.0.1",
     "jest": "^24.9.0",
     "standard": "^14.1.0"
+  },
+  "transform": {
+    "^.+\\.[t|j]sx?$": "babel-jest"
   }
 }
