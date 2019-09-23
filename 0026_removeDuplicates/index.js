@@ -9,7 +9,8 @@
 
 // To avoid reorder the array, we should splice the array from last item
 const removeDuplicates = nums => {
-  for (let i = nums.length; i > 0; i--) {
+  let lastIndex = nums.length - 1
+  for (let i = lastIndex; i >= 0; i--) {
     if (nums[i] === nums[i - 1]) {
       nums.splice(i, 1)
     }
