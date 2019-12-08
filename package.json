@@ -4,7 +4,7 @@
   "description": "My practices of algorithm problems on LeetCode",
   "main": "index.js",
   "scripts": {
-    "test": "jest --ci"
+    "test": "jest --watch"
   },
   "repository": {
     "type": "git",
@@ -22,6 +22,7 @@
   "devDependencies": {
     "@babel/cli": "^7.5.5",
     "@babel/core": "^7.5.5",
+    "@babel/plugin-proposal-optional-chaining": "^7.7.5",
     "@babel/preset-env": "^7.5.5",
     "babel-jest": "^24.9.0",
     "eslint": "^6.3.0",
