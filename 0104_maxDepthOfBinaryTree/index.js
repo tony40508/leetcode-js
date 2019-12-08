@@ -3,5 +3,5 @@ function maxDepth(root) {
 
   let left = maxDepth(root.left)
   let right = maxDepth(root.right)
-  return maxDepth(left, right) + 1
+  return Math.max(left, right) + 1
 }
