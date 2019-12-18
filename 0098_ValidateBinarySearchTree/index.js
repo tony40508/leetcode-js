@@ -12,5 +12,6 @@ function isValidBST(root) {
     if (!isValid(right, val, max)) return false
     return true
   }
-  return isValid(root, Number.MIN_SAFE_INTEGER, Number.MAX_SAFE_INTEGER)
+  // return isValid(root, Number.MIN_SAFE_INTEGER, Number.MAX_SAFE_INTEGER)
+  return isValid(root)
 }
