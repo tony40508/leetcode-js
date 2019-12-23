@@ -1,5 +1,5 @@
 function pushDominoes(dominoes) {
-  const result = []
+  let result = ''
   const length = dominoes.length
   const recordArray = [...new Array(length)].fill(0)
 
@@ -26,11 +26,12 @@ function pushDominoes(dominoes) {
     }
     recordArray[i] = recordArray[i] - record
   }
-  return recordArray
+  result = recordArray
     .map(record => {
       if (record > 0) return 'R'
       if (record < 0) return 'L'
       if (record === 0) return '.'
     })
     .join('')
+  return result
 }
