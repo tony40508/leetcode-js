@@ -18,10 +18,13 @@ function exist(board, word) {
       const char = board[row][col]
       // marker
       board[row][col] = 'x'
-      if (dfsSearch(index + 1, row - 1, col)) return true
-      if (dfsSearch(index + 1, row + 1, col)) return true
-      if (dfsSearch(index + 1, row, col - 1)) return true
-      if (dfsSearch(index + 1, row, col + 1)) return true
+      if (
+        dfsSearch(index + 1, row - 1, col) ||
+        dfsSearch(index + 1, row + 1, col) ||
+        dfsSearch(index + 1, row, col - 1) ||
+        dfsSearch(index + 1, row, col + 1)
+      )
+        return true
       // backtracking
       board[row][col] = char
     }
