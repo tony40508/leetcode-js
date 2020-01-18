@@ -5,6 +5,7 @@ function countNodes(root) {
   let leftDepth = 0
   let rightDepth = 0
 
+  // find most left and right node (leaf)
   while (leftRoot) {
     leftDepth++
     leftRoot = leftRoot.left
