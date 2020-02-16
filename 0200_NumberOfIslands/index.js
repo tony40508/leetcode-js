@@ -3,33 +3,33 @@
  * @return {number}
  */
 function numIslands(grid) {
-  const colLength = grid.length
-  const rowLength = grid[0] ? grid[0].length : 0
+  const rowLength = grid.length
+  const colLength = grid[0] ? grid[0].length : 0
 
-  function DFS(col, row) {
+  function DFS(row, col) {
     if (
-      col < 0 ||
-      col >= colLength ||
       row < 0 ||
       row >= rowLength ||
-      grid[col][row] == 0
+      col < 0 ||
+      col >= colLength ||
+      grid[row][col] == 0
       // can't use strict squality since outer params are number (test inputs are string)
     ) {
       return
     }
-    grid[col][row] = 0 // 1 -> 0 (found)
-    DFS(col - 1, row)
-    DFS(col, row - 1)
-    DFS(col + 1, row)
-    DFS(col, row + 1)
+    grid[row][col] = 0 // 1 -> 0 (found)
+    DFS(row - 1, col)
+    DFS(row, col - 1)
+    DFS(row + 1, col)
+    DFS(row, col + 1)
   }
   let result = 0
-  for (let col = 0; col < colLength; col++) {
-    for (let row = 0; row < rowLength; row++) {
+  for (let row = 0; row < rowLength; row++) {
+    for (let col = 0; col < colLength; col++) {
       // can't use strict squality since outer params are number (test inputs are string)
-      if (grid[col][row] == 1) {
+      if (grid[row][col] == 1) {
         result++
-        DFS(col, row)
+        DFS(row, col)
       }
     }
   }
