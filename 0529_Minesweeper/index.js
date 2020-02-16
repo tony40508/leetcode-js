@@ -2,6 +2,10 @@
  * @param {character[][]} board
  * @param {number[]} click
  * @return {character[][]}
+ * 'M' represents an unrevealed mine
+ * 'E' represents an unrevealed empty square
+ * 'B' represents a revealed blank square that has no adjacent
+ * 'X' represents a revealed mine
  */
 function updateBoard(board, click) {
   const directions = [
