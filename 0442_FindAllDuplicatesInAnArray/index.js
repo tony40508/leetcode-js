@@ -10,3 +10,6 @@ function findDuplicates(nums) {
   }
   return result
 }
+
+// space complexity: O(1)
+// time complexity: O(N)
