@@ -34,6 +34,7 @@ function expressiveWords(S, word) {
     console.log('S', W, charS, pointerS, countS)
     console.log('W', W, charW, pointerW, countW)
     if (pointerS !== SLength || pointerW !== WLength) return false
+    // both of pointers go through from beginning to end
     return true
   }
   for (const w of word) {
