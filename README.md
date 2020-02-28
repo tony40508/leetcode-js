@@ -9,4 +9,4 @@ My JavaScript solutions of algorithm problems on LeetCode
 |[0987](https://github.com/tony40508/leetcode-js/blob/master/0987_VerticalOrderTraversalOfABinaryTree/index.js)|   |   |[0017](https://github.com/tony40508/leetcode-js/blob/master/0017_LetterCombinationsOfAPhoneNumber/index.js)|[344](https://github.com/tony40508/leetcode-js/blob/master/0344_ReverseString/index.js)||   |   |   |
 |   |   |   |   |[0141](https://github.com/tony40508/leetcode-js/blob/master/0141_LinkedListCycle/index.js)|
 |   |   |   |   |[0125](https://github.com/tony40508/leetcode-js/blob/master/0125_isPalindrome/index.js)|
-|   |   |   |   |[0026](https://github.com/tony40508/leetcode-js/blob/master/0026_removeDuplicates/index.js)|
+|   |   |   |   |[0027](https://github.com/tony40508/leetcode-js/blob/master/0027_RemoveElement/index.js)|
