@@ -37,7 +37,7 @@ function longestConsecutive(nums) {
     console.log('round result', cur - end + 1 - repeat)
     result = Math.max(result, cur - end + 1 - repeat)
     // make sure pre won't go behind end at beginning of next loop
-    // next loop pre with end + 1
+    // next loop start with end + 1
     if (pre > end) end = pre
     end++
   }
