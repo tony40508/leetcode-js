@@ -1,6 +1,14 @@
 # leetcode-js
 My JavaScript solutions of algorithm problems on LeetCode
 
+```
+substr takes parameters as (from, length)
+substring takes parameters as (from, to)
+
+'abc'.substr(1, 2) // returns 'bc'
+'abc'.substring(1, 2) // returns 'b'
+```
+
 |DFS|BST|Cyclic Sort|Back Track|Two Pointer|Slide Window|
 |---|---|---|---|---|---|
 |[0101](https://github.com/tony40508/leetcode-js/blob/master/0101_symmetricTree/index.js)|[0034](https://github.com/tony40508/leetcode-js/blob/master/0034_FindFirstAndLastPositionOfElementInSortedArray/index.js)|[0442](https://github.com/tony40508/leetcode-js/blob/9f469316f64a4fdf75c530154aeb7dfd134a21c2/0442_FindAllDuplicatesInAnArray/index.js)|[0046](https://github.com/tony40508/leetcode-js/blob/master/0046_Permutations/index.js)|[0809](https://github.com/tony40508/leetcode-js/blob/master/0809_Expressive_Words/index.js)|[0567](https://github.com/tony40508/leetcode-js/blob/master/0567_PermutationInString/index.js)|
