@@ -18,3 +18,4 @@ substring takes parameters as (from, to)
 |   |   |   |   |[0141](https://github.com/tony40508/leetcode-js/blob/master/0141_LinkedListCycle/index.js)|[0845](https://github.com/tony40508/leetcode-js/blob/master/0845_LongestMountainInArray/index.js)
 |   |   |   |   |[0125](https://github.com/tony40508/leetcode-js/blob/master/0125_isPalindrome/index.js)|
 |   |   |   |   |[0027](https://github.com/tony40508/leetcode-js/blob/master/0027_RemoveElement/index.js)|
+|   |   |   |   |[0005](https://github.com/tony40508/leetcode-js/blob/master/0005_LongestPalindromicSubstring/index.js)|
