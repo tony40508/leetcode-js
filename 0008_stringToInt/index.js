@@ -1,27 +1,40 @@
-export const myAtoi = str => {
+/**
+ * @param {string} str
+ * @return {number}
+ */
+function myAtoi(str) {
   const min = -Math.pow(2, 31)
   const max = Math.pow(2, 31) - 1
   let i = 0
   let sign = 1
   let ans = 0
 
-  while (str.charAt(i) === ' ') {
+  // should use while rather than if
+  while (str[i] === ' ') {
     i++
   }
-  if (str.charAt(i) === '+') {
+
+  if (str[i] === '+') {
     i++
-  } else if (str.charAt(i) === '-') {
+  } else if (str[i] === '-') {
     sign = -1
     i++
   }
-  while (str.charAt(i) >= '0' && str.charAt(i) <= '9') {
-    ans = ans * 10 + parseInt(str.charAt(i), 10)
+
+  // /[0-9]/.test(s[i])
+  while (str[i] >= '0' && str[i] <= '9') {
+    ans = ans * 10 + parseInt(str[i], 10)
+
     if (ans * sign >= max) {
       return max
     } else if (ans * sign <= min) {
       return min
     }
+
     i++
   }
+
   return ans * sign
 }
+
+export { myAtoi }
