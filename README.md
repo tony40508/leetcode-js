@@ -2,6 +2,10 @@
 My JavaScript solutions of algorithm problems on LeetCode
 
 ```
+npm run test
+```
+
+```
 substr takes parameters as (from, length)
 substring takes parameters as (from, to)
 
