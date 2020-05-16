@@ -23,3 +23,5 @@ substring takes parameters as (from, to)
 |[1377](https://github.com/tony40508/leetcode-js/blob/master/1377_FrogPositionAfterTSeconds/index.js)|   |   |   |[0125](https://github.com/tony40508/leetcode-js/blob/master/0125_isPalindrome/index.js)|[1358](https://github.com/tony40508/leetcode-js/blob/master/1358_NumberOfSubstringsContainingAllThreeCharacters/index.js)
 |[1368](https://github.com/tony40508/leetcode-js/blob/master/1368_MinimumCostToMakeAtLeastOneValidPathInAGrid/index.js)|   |   |   |[0027](https://github.com/tony40508/leetcode-js/blob/master/0027_RemoveElement/index.js)|
 |[1349](https://github.com/tony40508/leetcode-js/blob/master/1349_MaximumStudentsTakingExam/index.js)|   |   |   |[0005](https://github.com/tony40508/leetcode-js/blob/master/0005_LongestPalindromicSubstring/index.js)|
+|[1306](https://github.com/tony40508/leetcode-js/blob/master/1306_JumpGameIII/index.js)|   |   |   |   |
+
