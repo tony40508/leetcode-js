@@ -32,6 +32,6 @@ function btreeGameWinningMove(root, n, red) {
 
   // red's parent = total - red's left - red's right - red (itself)
   // red can only color its parent, left or right nodes
-  // we (blue) need to choose one of them to block red
+  // Therefore, we (blue) need to choose one of them to block red
   return Math.max(Math.max(left, right), n - left - right - 1) > n / 2
 }
