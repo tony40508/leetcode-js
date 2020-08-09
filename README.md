@@ -25,4 +25,5 @@ substring takes parameters as (from, to)
 |[1349](https://github.com/tony40508/leetcode-js/blob/master/1349_MaximumStudentsTakingExam/index.js)|   |   |   |[0005](https://github.com/tony40508/leetcode-js/blob/master/0005_LongestPalindromicSubstring/index.js)|
 |[1306](https://github.com/tony40508/leetcode-js/blob/master/1306_JumpGameIII/index.js)|   |   |   |   |
 |[1339](https://github.com/tony40508/leetcode-js/blob/master/1339_MaximumProductOfSplittedBinaryTree/index.js)|   |   |   |   |
+|[1145](https://github.com/tony40508/leetcode-js/blob/master/1145_BinaryTreeColoringGame/index.js)|   |   |   |   |
 
