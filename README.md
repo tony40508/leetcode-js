@@ -1,11 +1,11 @@
 # leetcode-js
 My JavaScript solutions of algorithm problems on LeetCode
 
-```
+```sh
 npm run test
 ```
 
-```
+```js
 substr takes parameters as (from, length)
 substring takes parameters as (from, to)
 
