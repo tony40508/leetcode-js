@@ -30,7 +30,7 @@ function invertTree(root) {
   queue.push(root)
 
   while (queue.length > 0) {
-    const node = queue.pop()
+    const node = queue.shift()
     ;[node.left, node.right] = [node.right, node.left]
     if (node.left) queue.push(node.left)
     if (node.right) queue.push(node.right)
