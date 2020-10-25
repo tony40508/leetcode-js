@@ -14,8 +14,8 @@ function relativeSortArray(arr1, arr2) {
 
   arr1.forEach((item) => {
     if (cache.get(item)) {
-      const count = cache.get(item)
-      cache.set(item, count + 1)
+      const times = cache.get(item)
+      cache.set(item, times + 1)
     } else {
       cache.set(item, 1)
     }
