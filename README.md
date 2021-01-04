@@ -26,4 +26,5 @@ substring takes parameters as (from, to)
 |[1306](https://github.com/tony40508/leetcode-js/blob/master/1306_JumpGameIII/index.js)|   |   |   |[0986](https://github.com/tony40508/leetcode-js/blob/master/0986_IntervalListIntersections/index.js)   |
 |[1339](https://github.com/tony40508/leetcode-js/blob/master/1339_MaximumProductOfSplittedBinaryTree/index.js)|   |   |   |   |
 |[1145](https://github.com/tony40508/leetcode-js/blob/master/1145_BinaryTreeColoringGame/index.js)|   |   |   |   |
+|[0886](https://github.com/tony40508/leetcode-js/commit/edf55c78a35a9deb1d6b505745a23a0783712886)|   |   |   |   |
 
