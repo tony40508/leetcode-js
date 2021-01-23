@@ -21,7 +21,7 @@ function shortestSubarray(A, K) {
       startPointCandidates.length > 0 &&
       sums[j] - sums[startPointCandidates[startPointCandidates.length - 1]] < 1
     ) {
-      // for shortestSubarray since sums[j] >= K
+      // remove/pop needless candidate for shortestSubarray since K at least 1
       startPointCandidates.pop()
     }
     // 2. left to right in startPointCandidates
