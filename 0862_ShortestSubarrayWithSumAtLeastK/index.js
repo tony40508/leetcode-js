@@ -16,7 +16,8 @@ function shortestSubarray(A, K) {
 
   for (let j = 0; j < sums.length; j++) {
     // narrow candidates for reducing potential computation
-    // 1. right to left in startPointCandidates
+    // 1. right to left in startPointCandidates for negative cases
+    // e.g. A = [84,-37,32,40,95] K = 167
     while (
       startPointCandidates.length > 0 &&
       sums[j] - sums[startPointCandidates[startPointCandidates.length - 1]] < 1
