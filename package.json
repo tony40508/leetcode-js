@@ -4,7 +4,7 @@
   "description": "My practices of algorithm problems on LeetCode",
   "main": "index.js",
   "scripts": {
-    "test": "jest --watch"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
