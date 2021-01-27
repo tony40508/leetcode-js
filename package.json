@@ -20,17 +20,17 @@
   },
   "homepage": "https://github.com/tony40508/leetcode-js#readme",
   "devDependencies": {
-    "@babel/cli": "^7.5.5",
+    "@babel/cli": "^7.12.10",
     "@babel/core": "^7.5.5",
     "@babel/plugin-proposal-optional-chaining": "^7.7.5",
     "@babel/preset-env": "^7.5.5",
-    "babel-jest": "^24.9.0",
+    "babel-jest": "^26.6.3",
     "eslint": "^6.3.0",
     "eslint-plugin-import": "^2.18.2",
     "eslint-plugin-node": "^10.0.0",
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-standard": "^4.0.1",
-    "jest": "^24.9.0",
+    "jest": "^26.6.3",
     "standard": "^14.1.0"
   },
   "transform": {
