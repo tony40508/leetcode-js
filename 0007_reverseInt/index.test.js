@@ -1,4 +1,4 @@
-import { reverseInt } from '../0007_reverseint/index'
+// import { reverseInt } from '../0007_reverseint/index'
 
 test.skip('0007_reverseInt', () => {
   expect(reverseInt(123)).toEqual(321)
