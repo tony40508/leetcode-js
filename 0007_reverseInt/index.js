@@ -9,5 +9,3 @@ const reverseInt = (x) => {
   }
   return reverseNum
 }
-
-export default reverseInt
