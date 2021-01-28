@@ -2,7 +2,8 @@
 My JavaScript solutions of algorithm problems on LeetCode
 
 ```sh
-npm run test
+yarn install
+yarn test
 ```
 
 ```js
