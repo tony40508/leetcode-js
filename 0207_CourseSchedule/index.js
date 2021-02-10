@@ -1,6 +1,6 @@
 function canFinish(numCourses, prerequisites) {
   let coursesMap = new Map()
-  prerequisites.forEach(prerequisity => {
+  prerequisites.forEach((prerequisity) => {
     if (!coursesMap.has(prerequisity[0])) {
       coursesMap.set(prerequisity[0], [prerequisity[1]])
     } else {
@@ -41,13 +41,13 @@ console.log(canFinish(2, [[1, 0]]))
 console.log(
   canFinish(2, [
     [1, 0],
-    [0, 1]
+    [0, 1],
   ])
 )
 
 console.log(
   canFinish(3, [
     [1, 0],
-    [2, 0]
+    [2, 0],
   ])
 )
