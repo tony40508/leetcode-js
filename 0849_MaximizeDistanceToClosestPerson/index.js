@@ -29,3 +29,5 @@ function maxDistToClosest(seats) {
 
   return Math.max(result, seats.length - 1 - prev)
 }
+
+export default maxDistToClosest
