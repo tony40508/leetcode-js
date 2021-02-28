@@ -35,4 +35,4 @@ function isNStraightHand(hand, W) {
   return true
 }
 
-isNStraightHand([1, 1, 2, 2, 3, 3], 3)
+export default isNStraightHand
