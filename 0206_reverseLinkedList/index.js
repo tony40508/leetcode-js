@@ -4,19 +4,32 @@ function ListNode(val) {
 }
 
 function reverseList(head) {
-  let curHead = head
-  let newHead = null
-  let tempNext = null
+  let prev = null
 
-  while (curHead) {
-    tempNext = curHead.next
-    curHead.next = newHead
-    newHead = curHead
-    curHead = tempNext
+  while (head) {
+    const next = head.next
+    head.next = prev
+    prev = head
+    head = next
   }
 
-  return newHead
+  return prev
 }
+
+// function reverseList(head) {
+//   let curHead = head
+//   let newHead = null
+//   let tempNext = null
+
+//   while (curHead) {
+//     tempNext = curHead.next
+//     curHead.next = newHead
+//     newHead = curHead
+//     curHead = tempNext
+//   }
+
+//   return newHead
+// }
 
 // const reverseList = head => {
 //   if (!head) return null
