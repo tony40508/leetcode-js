@@ -3,30 +3,51 @@
  * @return {number[][]}
  */
 function permute(nums) {
-  function backTrack(set, path) {
-    // base case: path is full
+  const result = []
+  const cache = {}
+
+  function DFS(path) {
     if (path.length === nums.length) {
-      set.add([...path])
-      return set
+      result.push([...path])
+      return
     }
-    // loop to try nums in current depth
     for (const num of nums) {
-      // guard to prevent repeating numbers in the path
-      if (path.includes(num)) continue
-      path.push(num)
-      backTrack(set, path)
-      console.log('=======start========')
-      console.log(path)
-      path.splice(path.length - 1, 1)
-      console.log(path)
-      console.log('========end=========')
-      // backTrack: remove last one to search for other possibilities
+      if (cache[num]) continue
+      cache[num] = true
+      DFS([...path, num])
+      cache[num] = false
     }
-    return set
   }
-  // return an array
-  return [...backTrack(new Set(), [])]
+
+  DFS([])
+
+  return result
 }
+// function permute(nums) {
+//   function backTrack(set, path) {
+//     // base case: path is full
+//     if (path.length === nums.length) {
+//       set.add([...path])
+//       return set
+//     }
+//     // loop to try nums in current depth
+//     for (const num of nums) {
+//       // guard to prevent repeating numbers in the path
+//       if (path.includes(num)) continue
+//       path.push(num)
+//       backTrack(set, path)
+//       console.log('=======start========')
+//       console.log(path)
+//       path.splice(path.length - 1, 1)
+//       console.log(path)
+//       console.log('========end=========')
+//       // backTrack: remove last one to search for other possibilities
+//     }
+//     return set
+//   }
+//   // return an array
+//   return [...backTrack(new Set(), [])]
+// }
 
 // =======start========
 // [ 1, 2, 3 ]
