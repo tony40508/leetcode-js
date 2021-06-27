@@ -27,7 +27,8 @@ substring takes parameters as (from, to)
 |[1306](https://github.com/tony40508/leetcode-js/blob/master/1306_JumpGameIII/index.js)|   |   |   |[0986](https://github.com/tony40508/leetcode-js/blob/master/0986_IntervalListIntersections/index.js)   |
 |[1339](https://github.com/tony40508/leetcode-js/blob/master/1339_MaximumProductOfSplittedBinaryTree/index.js)|   |   |   |   |
 |[1145](https://github.com/tony40508/leetcode-js/blob/master/1145_BinaryTreeColoringGame/index.js)|   |   |   |   |
-|[0886](https://github.com/tony40508/leetcode-js/commit/edf55c78a35a9deb1d6b505745a23a0783712886)|   |   |   |   |
-|[0971](https://github.com/tony40508/leetcode-js/commit/3b7d80fef5a1d22f9dd4c2c09988fdd08c49445d)|   |   |   |   |
-|[0865](https://github.com/tony40508/leetcode-js/commit/5232555ef881599a86c56f4c6cef516255a5ba5c)|   |   |   |   |
+|[0886](https://github.com/tony40508/leetcode-js/blob/master/0886_PossibleBipartition/index.js)|   |   |   |   |
+|[0971](https://github.com/tony40508/leetcode-js/blob/master/0971_FlipBinaryTreeToMatchPreorderTraversal/index.js)|   |   |   |   |
+|[0865](https://github.com/tony40508/leetcode-js/blob/master/0865_SmallestSubtreeWithAllTheDeepestNodes/index.js)|   |   |   |   |
+|[0046](https://github.com/tony40508/leetcode-js/blob/master/0046_Permutations/index.js)|   |   |   |   |
 
