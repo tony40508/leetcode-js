@@ -1,4 +1,4 @@
-import { romanToInt } from '../0013_romanToInteger/index'
+import { romanToInt } from './index'
 
 test('0013_romanToInteger', () => {
   expect(romanToInt('III')).toEqual(3)
