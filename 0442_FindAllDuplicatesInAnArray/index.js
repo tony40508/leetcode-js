@@ -1,3 +1,25 @@
+/**
+ * @param {number[]} nums
+ * @return {number[]}
+ */
+
+// map
+function findDuplicates(nums) {
+  const result = []
+  const map = new Map()
+
+  for (const num of nums) {
+    if (map.has(num)) {
+      result.push(num)
+    } else {
+      map.set(num, true)
+    }
+  }
+
+  return result
+}
+
+// cyclic sort
 function findDuplicates(nums) {
   let result = []
   for (const num of nums) {
