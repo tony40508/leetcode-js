@@ -1,9 +1,26 @@
+/**
+ * @param {number[]} nums
+ * @param {number} k
+ * @return {void} Do not return anything, modify nums in-place instead.
+ */
+// function rotate(nums, k) {
+//   // Time Limit Exceeded
+//   while (k--) {
+//     const num = nums.pop()
+//     nums.unshift(num)
+//   }
+// }
+
 function rotate(nums, k) {
-  let res = []
-  for (let i of nums.keys()) {
-    res[(i + k) % nums.length] = nums[i]
+  let result = []
+
+  for (let i = 0; i < nums.length; i++) {
+    const offsetIndex = (i + k) % nums.length
+    result[offsetIndex] = nums[i]
   }
-  for (let i of nums.keys()) {
-    nums[i] = res[i]
+
+  // overwrite nums
+  for (let i = 0; i < nums.length; i++) {
+    nums[i] = result[i]
   }
 }
