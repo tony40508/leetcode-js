@@ -26,7 +26,7 @@ substring takes parameters as (from, to)
 |[1349](https://github.com/tony40508/leetcode-js/blob/master/1349_MaximumStudentsTakingExam/index.js)|   |   |   |[0005](https://github.com/tony40508/leetcode-js/blob/master/0005_LongestPalindromicSubstring/index.js)|[0862](https://github.com/tony40508/leetcode-js/blob/78d848d455524e35e51fcbfde1ea2600c2a98eb0/0862_ShortestSubarrayWithSumAtLeastK/index.js)
 |[1306](https://github.com/tony40508/leetcode-js/blob/master/1306_JumpGameIII/index.js)|   |   |   |[0986](https://github.com/tony40508/leetcode-js/blob/master/0986_IntervalListIntersections/index.js)   |
 |[1339](https://github.com/tony40508/leetcode-js/blob/master/1339_MaximumProductOfSplittedBinaryTree/index.js)|   |   |   |[0011](https://github.com/tony40508/leetcode-js/blob/master/0011_ContainerWithMostWater/index.js)|
-|[1145](https://github.com/tony40508/leetcode-js/blob/master/1145_BinaryTreeColoringGame/index.js)|   |   |   |   |
+|[1145](https://github.com/tony40508/leetcode-js/blob/master/1145_BinaryTreeColoringGame/index.js)|   |   |   |[0977](https://github.com/tony40508/leetcode-js/blob/master/0977_SquaresOfASortedArray/index.js)   |
 |[0886](https://github.com/tony40508/leetcode-js/blob/master/0886_PossibleBipartition/index.js)|   |   |   |   |
 |[0971](https://github.com/tony40508/leetcode-js/blob/master/0971_FlipBinaryTreeToMatchPreorderTraversal/index.js)|   |   |   |   |
 |[0865](https://github.com/tony40508/leetcode-js/blob/master/0865_SmallestSubtreeWithAllTheDeepestNodes/index.js)|   |   |   |   |
