@@ -1,3 +1,8 @@
+/**
+ * @param {number[]} numbers
+ * @param {number} target
+ * @return {number[]}
+ */
 function twoSum(numbers, target) {
   const length = numbers.length
   let start = 0
@@ -7,14 +12,10 @@ function twoSum(numbers, target) {
     const sum = numbers[start] + numbers[end]
     if (sum === target) {
       return [start + 1, end + 1]
-    }
-    if (sum > target) {
-      end--
-      continue
-    }
-    if (sum < target) {
+    } else if (sum < target) {
       start++
-      continue
+    } else {
+      end--
     }
   }
 }
