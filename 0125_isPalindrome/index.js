@@ -3,7 +3,7 @@
  * @return {boolean}
  */
 function isPalindrome(s) {
-  const str = s.toLowerCase().replace(/[^0-9a-zA-Z]/g, '') // [\W] === /[^A-Za-z0-9_]/
+  const str = s.toLowerCase().replace(/[^0-9a-zA-Z]/g, '') // [\W] === [^A-Za-z0-9_]
 
   let start = 0
   let end = str.length - 1
