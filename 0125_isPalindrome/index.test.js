@@ -1,5 +1,5 @@
 import isPalindrome from './index'
 
-it('should replace under line', () => {
+it('should replace underline', () => {
   expect(isPalindrome('ab_a')).toBeTruthy()
 })
