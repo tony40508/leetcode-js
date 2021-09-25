@@ -3,7 +3,7 @@
  * @return {string}
  */
 // time: O(n^2)
-// space: O(n) for substring
+// space: O(n) for substring in for-loop
 function longestPalindrome(s) {
   let result = ''
 
