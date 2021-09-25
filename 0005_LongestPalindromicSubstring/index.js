@@ -7,7 +7,7 @@ function longestPalindrome(s) {
   let result = ''
 
   for (let i = 0; i < s.length; i++) {
-    const oddStr = getLongestPalindrome(i - 1, i + 1) // (i - 1, i + 1)
+    const oddStr = getLongestPalindrome(i - 1, i + 1) // (i, i)
     const evenStr = getLongestPalindrome(i, i + 1)
 
     const longestStr = oddStr.length > evenStr.length ? oddStr : evenStr
@@ -33,7 +33,7 @@ export default longestPalindrome
 //   let result = '';
 //   for (let i = 0; i < s.length; i++) {
 //     for (let j = i; j < s.length; j++) {
-//       const substring = s.slice(i, j + 1);
+//       const substring = s.substring(i, j + 1);
 //       if (substring.length > result.length && isPalindrome(substring)) {
 //         result = substring;
 //       }
