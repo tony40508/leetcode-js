@@ -3,11 +3,14 @@
  * @return {string}
  */
 // time: O(n)
+// space: O(n) for substring
 function longestPalindrome(s) {
   let result = ''
 
   for (let i = 0; i < s.length; i++) {
+    // ab|c|ba
     const oddStr = getLongestPalindrome(i - 1, i + 1) // (i, i)
+    // ab|ba
     const evenStr = getLongestPalindrome(i, i + 1)
 
     const longestStr = oddStr.length > evenStr.length ? oddStr : evenStr
