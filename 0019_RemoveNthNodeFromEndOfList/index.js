@@ -10,6 +10,8 @@
  * @param {number} n
  * @return {ListNode}
  */
+// time: O(n)
+// space: O(1)
 function removeNthFromEnd(head, n) {
   let front = head
   let back = head
