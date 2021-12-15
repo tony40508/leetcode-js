@@ -3,6 +3,7 @@ function ListNode(val) {
   this.next = null
 }
 
+// @see https://youtu.be/Hj_rA0dhr2I?t=3954
 function reverseList(head) {
   let prev = null
 

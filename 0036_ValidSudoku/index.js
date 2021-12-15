@@ -23,7 +23,7 @@ function isValidSudoku(board) {
         colSet.add(colNumber)
       }
 
-      // https://youtu.be/qPLYKr7HdKU?t=239
+      // @see https://youtu.be/qPLYKr7HdKU?t=239
       const boxNumber =
         board[Math.floor(i / 3) * 3 + Math.floor(j / 3)][
           ((i * 3) % 9) + (j % 3)
