@@ -4,39 +4,34 @@
  * @return {number[]}
  */
 function topKFrequent(nums, k) {
-  // key: freq
-  const keyMap = {}
-  nums.forEach(num => {
-    if (!keyMap[num]) {
-      keyMap[num] = 1
+  const keyMap = new Map()
+  nums.forEach((num) => {
+    if (!keyMap.has(num)) {
+      keyMap.set(num, 1)
     } else {
-      keyMap[num]++
+      keyMap.set(num, keyMap.get(num) + 1)
     }
   })
-  // freq: keys[]
-  const freqMap = {}
-  for (const [key, freq] of Object.entries(keyMap)) {
-    if (!freqMap[freq]) {
-      freqMap[freq] = []
+
+  const freqMap = new Map()
+  for (const [key, freq] of keyMap) {
+    if (!freqMap.has(freq)) {
+      freqMap.set(freq, [])
     }
-    freqMap[freq].push(key)
+    freqMap.set(freq, [...freqMap.get(freq), key])
   }
 
   let result = []
-  // descending sort
-  const sortedFreqs = Object.keys(freqMap).sort((a, b) => b - a)
-  console.log('sortedFreqs', sortedFreqs)
+  const sortedFreqs = [...freqMap.keys()].sort((a, b) => b - a) // descending sort
 
-  let ptrK = 0
+  let i = 0
   for (const freq of sortedFreqs) {
-    const keys = freqMap[freq]
-    console.log(`===freq: ${freq}===`)
-    console.log('keys: ', keys)
-    for (let i = 0; i < keys.length && ptrK < k; i++) {
-      console.log(`===${i}===`)
-      console.log('ptrK', ptrK)
-      result.push(keys[i])
-      ptrK++
+    const keys = freqMap.get(freq)
+
+    for (const key of keys) {
+      if (i >= k) break
+      result.push(key)
+      i++
     }
   }
 
@@ -44,20 +39,3 @@ function topKFrequent(nums, k) {
 }
 
 console.log(topKFrequent([1, 1, 1, 2, 2, 3], 2))
-
-// sortedFreqs['3', '2', '1']
-//
-// ===freq: 3===
-// keys:  ['1']
-// ===0===
-// ptrK 0
-//
-// ===freq: 2===
-// keys:  ['2']
-// ===0===
-// ptrK 1
-//
-// ===freq: 1===
-// keys:  ['3']
-//
-// [ '1', '2' ]
