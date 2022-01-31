@@ -1,4 +1,4 @@
-import { longestCommonPrefix } from './index'
+import longestCommonPrefix from './index'
 
 test('0014_longestCommonPrefix', () => {
   expect(longestCommonPrefix(['flower', 'flow', 'flight'])).toEqual('fl')
@@ -6,4 +6,6 @@ test('0014_longestCommonPrefix', () => {
   expect(longestCommonPrefix([''])).not.toBeUndefined()
   expect(longestCommonPrefix(['a'])).not.toBeUndefined()
   expect(longestCommonPrefix(['', ''])).toEqual('')
+  expect(longestCommonPrefix(['cir', 'car'])).toEqual('c')
+  expect(longestCommonPrefix(['aaa', 'aa', 'aaa'])).toEqual('aa')
 })

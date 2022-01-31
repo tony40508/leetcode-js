@@ -1,12 +1,24 @@
-export const longestCommonPrefix = strs => {
-  if (!strs.length) return ''
-  const sortedStrs = strs.sort()
-  let i = 0
-  let firstStr = sortedStrs[0]
-  let lastStr = sortedStrs[sortedStrs.length - 1]
+/**
+ * @param {string[]} strs
+ * @return {string}
+ */
+function longestCommonPrefix(strs) {
+  let result = ''
+  if (strs.length < 1) return result
 
-  while (i < firstStr.length && firstStr.charAt(i) === lastStr.charAt(i)) {
-    i++
+  const sortedStrs = strs.sort()
+  const firstStr = sortedStrs[0]
+  const lastStr = sortedStrs[sortedStrs.length - 1]
+
+  for (let i = 0; i < firstStr.length; i++) {
+    if (firstStr[i] === lastStr[i]) {
+      result = result + firstStr[i]
+    } else {
+      break
+    }
   }
-  return firstStr.slice(0, i)
+
+  return result
 }
+
+export default longestCommonPrefix
