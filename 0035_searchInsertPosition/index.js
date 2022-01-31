@@ -15,7 +15,7 @@ function searchInsert(nums, target) {
     } else if (target > nums[mid]) {
       start = mid + 1
     } else if (target < nums[mid]) {
-      end = mid
+      end = mid // right inserted index
     }
   }
 
