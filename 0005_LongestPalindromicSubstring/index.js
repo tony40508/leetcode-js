@@ -9,7 +9,7 @@ function longestPalindrome(s) {
 
   for (let i = 0; i < s.length; i++) {
     // ab|c|ba
-    const oddStr = getLongestPalindrome(i - 1, i + 1) // (i, i)
+    const oddStr = getLongestPalindrome(i - 1, i + 1) // or (i, i)
     // ab|ba
     const evenStr = getLongestPalindrome(i, i + 1)
 
@@ -23,7 +23,7 @@ function longestPalindrome(s) {
       left--
       right++
     }
-    return s.substring(left + 1, right) // slice()
+    return s.substring(left + 1, right) // pick inner index in both sides
   }
 
   return result
