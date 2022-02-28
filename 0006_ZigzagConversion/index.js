@@ -11,7 +11,7 @@ function convert(s, numRows) {
   for (let row = 0; row < numRows; row++) {
     const gap = numRows + numRows - 2
     for (let i = row; i < s.length; i += gap) {
-      // main column
+      // main columns
       result += s[i]
 
       // skip row of top/bottom
