@@ -6,12 +6,12 @@ yarn install
 yarn test
 ```
 
-```js
-substr takes parameters as (from, length)
+<del>substr takes parameters as (from, length)</del> (deprecated)
+<br>
 substring takes parameters as (from, to)
-
-'abc'.substr(1, 2) // returns 'bc'
-'abc'.substring(1, 2) // returns 'b'
+```js
+'abc'.substring(1, 2) 
+// returns 'b'
 ```
 
 |DFS|BST|Cyclic Sort|Back Track|Two Pointer|Slide Window|BFS|DP|
