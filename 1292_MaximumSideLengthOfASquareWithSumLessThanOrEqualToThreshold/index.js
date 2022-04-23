@@ -12,10 +12,11 @@ function maxSideLength(mat, threshold) {
     dp[i] = new Array(n + 1).fill(0)
   }
 
+  // calc sum and reuse in dp
   for (let i = 1; i <= m; i++) {
     for (let j = 1; j <= n; j++) {
       dp[i][j] =
-        dp[i - 1][j] + dp[i][j - 1] + mat[i - 1][j - 1] - dp[i - 1][j - 1]
+        dp[i - 1][j] + dp[i][j - 1] - dp[i - 1][j - 1] + mat[i - 1][j - 1] // minus overlap of dp
     }
   }
 
