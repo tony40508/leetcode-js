@@ -27,7 +27,7 @@ function longestPrefix(s) {
 
 // string    a b a x a b a b a x
 // LHP       0 0 1 0 1 2 3 2 3 4
-// prefixLen              1 2
+// prefixLen              1 2 3 4
 
 // function longestPrefix(s) {
 //   let prefixLen = 0
